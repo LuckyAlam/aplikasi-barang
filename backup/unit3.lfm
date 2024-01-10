@@ -1,0 +1,100 @@
+object Form3: TForm3
+  Left = 388
+  Height = 360
+  Top = 479
+  Width = 701
+  Caption = 'Aplikasi Data Barang'
+  ClientHeight = 360
+  ClientWidth = 701
+  DesignTimePPI = 144
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 232
+    Height = 32
+    Top = 16
+    Width = 238
+    Caption = 'Aplikasi Data Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -24
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 32
+    Height = 38
+    Top = 72
+    Width = 113
+    Caption = 'Tambah'
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 176
+    Height = 38
+    Top = 72
+    Width = 113
+    Caption = 'Ubah'
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 336
+    Height = 38
+    Top = 72
+    Width = 113
+    Caption = 'Hapus'
+    TabOrder = 2
+  end
+  object DBGrid1: TDBGrid
+    Left = 40
+    Height = 150
+    Top = 128
+    Width = 544
+    Color = clWindow
+    Columns = <>
+    TabOrder = 3
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 40
+    Height = 38
+    Top = 296
+    Width = 538
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 38
+    ClientWidth = 538
+    Options = []
+    TabOrder = 4
+  end
+  object DataSource1: TDataSource
+    Left = 328
+    Top = 168
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'barang_aplikasi'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'C:\Program Files\MySQL\MySQL Server 8.2\lib\libmysql.dll'
+    Left = 184
+    Top = 168
+  end
+  object ZQuery1: TZQuery
+    Params = <>
+    Left = 456
+    Top = 168
+  end
+end

@@ -1,0 +1,76 @@
+object Form1: TForm1
+  Left = 418
+  Height = 534
+  Top = 461
+  Width = 634
+  Caption = 'Login Aplikasi'
+  ClientHeight = 0
+  ClientWidth = 0
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 156
+    Height = 34
+    Top = 60
+    Width = 287
+    Caption = 'Aplikasi Data Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Name = 'Poppins'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 122
+    Height = 33
+    Top = 180
+    Width = 358
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 123
+    Height = 21
+    Top = 152
+    Width = 82
+    Caption = 'Username'
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Poppins Medium'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 123
+    Height = 21
+    Top = 276
+    Width = 79
+    Caption = 'Password'
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Poppins Medium'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit2: TEdit
+    Left = 120
+    Height = 33
+    Top = 300
+    Width = 360
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 120
+    Height = 38
+    Top = 396
+    Width = 112
+    Caption = 'Login'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+end

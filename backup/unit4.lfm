@@ -1,0 +1,76 @@
+object Form4: TForm4
+  Left = 324
+  Height = 321
+  Top = 408
+  Width = 857
+  Caption = 'Transaksi'
+  ClientHeight = 321
+  ClientWidth = 857
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 128
+    Height = 32
+    Top = 24
+    Width = 157
+    Caption = 'Master/Detail'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -24
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 150
+    Top = 96
+    Width = 388
+    Color = clWindow
+    Columns = <>
+    TabOrder = 0
+  end
+  object DBGrid2: TDBGrid
+    Left = 416
+    Height = 150
+    Top = 96
+    Width = 422
+    Color = clWindow
+    Columns = <>
+    TabOrder = 1
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Port = 0
+    Left = 48
+    Top = 184
+  end
+  object ZConnection2: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Port = 0
+    Left = 472
+    Top = 176
+  end
+  object ZQuery1: TZQuery
+    Params = <>
+    Left = 224
+    Top = 184
+  end
+  object ZQuery2: TZQuery
+    Params = <>
+    Left = 776
+    Top = 176
+  end
+  object DataSource1: TDataSource
+    Left = 136
+    Top = 184
+  end
+  object DataSource2: TDataSource
+    Left = 624
+    Top = 176
+  end
+end
